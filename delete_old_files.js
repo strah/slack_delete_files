@@ -13,7 +13,7 @@ function getFiles(page, files) {
     files = files || [];
     page = page || 1;
     console.log("Getting files. Page:", page);
-    request.post({url: apiURL + "files.list", form: {token: token, to_ts: dateLimit, page: page, count: 100}}, function(err, resp, body) {
+    request.post({url: apiURL + "files.list", form: {token: token, ts_to: dateLimit, page: page, count: 100}}, function(err, resp, body) {
         var res = JSON.parse(resp.body);
         var pages = res.paging.pages;
         var currPage = res.paging.page;
