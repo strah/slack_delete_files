@@ -2,7 +2,7 @@ Batch delete files from Slack
 ===================
 
 
-This node script allows you to batch delete files from the Slack archive
+This node script allows you to easily bulk delete old files from the Slack archive.
 
 ----------
 
